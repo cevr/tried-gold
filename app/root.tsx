@@ -39,7 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <body className="flex min-h-screen flex-col">
-          <header className="border-b px-4 py-6">
+          <header className="px-4 py-6">
             <div className="container mx-auto flex items-center justify-between">
               <Link
                 to="/"
@@ -86,7 +86,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </header>
           <main className="flex-1">{children}</main>
-          <footer className="border-t px-4 py-6 text-center text-sm text-gray-600">
+          <footer className="px-4 py-6 text-center text-sm text-gray-600">
             <div className="container mx-auto">
               © {new Date().getFullYear()} by Tried Gold Ministries.
             </div>

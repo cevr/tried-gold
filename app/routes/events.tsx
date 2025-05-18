@@ -7,32 +7,32 @@ import type { Route } from './+types/events';
 const upcomingEvents = [
   {
     id: '1',
-    title: 'Resilience in Uncertain Times: A Biblical Perspective',
+    title: 'The Three Angels Messages: Understanding End-Time Prophecy',
     date: 'June 15, 2025',
     time: '7:00 PM - 9:00 PM',
     location: 'Community Center, 123 Main St, Anytown',
     description:
-      'Join us for an evening of insight and encouragement as we explore biblical principles for maintaining resilience during challenging seasons. This interactive workshop will provide practical tools for navigating uncertainty with faith and wisdom.',
+      'Join us for an in-depth study of Revelation 14 and the Three Angels Messages. We will explore the historical context, current relevance, and practical application of these crucial end-time prophecies. This seminar will strengthen your understanding of our unique SDA message and mission.',
     registrationLink: '#register-1',
   },
   {
     id: '2',
-    title: 'Foundations of Faith Study Group',
+    title: "Health and Temperance: God's Natural Remedies",
     date: 'Every Thursday starting June 20, 2025',
     time: '6:30 PM - 8:00 PM',
     location: 'Virtual Event (Zoom)',
     description:
-      'This 8-week study group will explore foundational biblical teachings and their application in daily life. Perfect for both newcomers to faith and those seeking deeper understanding, each session includes teaching, discussion, and practical application.',
+      "This 8-week study will explore the health principles given to Ellen G. White and their biblical foundation. Topics include the eight natural remedies, plant-based nutrition, and practical steps for implementing God's health laws in your daily life. Perfect for those seeking to align their lifestyle with SDA health principles.",
     registrationLink: '#register-2',
   },
   {
     id: '3',
-    title: 'Community Service Day: Serving Together',
+    title: 'Sabbath School Leadership Training',
     date: 'July 12, 2025',
     time: '9:00 AM - 2:00 PM',
-    location: 'City Park & Downtown Area',
+    location: 'Church Fellowship Hall',
     description:
-      "Put faith into action by joining our quarterly community service day. We'll be partnering with local organizations to serve our community through various projects including park cleanup, food distribution, and assistance for elderly residents.",
+      'A comprehensive training session for Sabbath School teachers and leaders. Learn effective methods for teaching Bible lessons, engaging youth, and creating meaningful Sabbath School experiences that honor our SDA heritage and promote spiritual growth.',
     registrationLink: '#register-3',
   },
 ];
@@ -40,24 +40,24 @@ const upcomingEvents = [
 const pastEvents = [
   {
     id: '4',
-    title: 'Wisdom for Modern Relationships',
+    title: 'The Great Controversy: Understanding the Conflict',
     date: 'May 8, 2025',
     description:
-      "A workshop exploring biblical principles for healthy relationships in today's complex social landscape.",
+      'A deep dive into the great controversy theme and its relevance to our daily walk with Christ. This workshop explored the cosmic conflict between good and evil from an SDA perspective.',
   },
   {
     id: '5',
-    title: 'Financial Stewardship in Challenging Times',
+    title: 'Biblical Stewardship: Tithing and Offerings',
     date: 'April 22, 2025',
     description:
-      'A practical seminar on managing resources wisely and generously according to biblical principles.',
+      "A practical seminar on biblical stewardship principles, focusing on the importance of tithing, systematic benevolence, and faithful management of God's resources according to SDA teachings.",
   },
   {
     id: '6',
-    title: 'Easter Sunrise Service',
+    title: 'Pathfinder Club Annual Investiture',
     date: 'March 31, 2025',
     description:
-      'A special gathering to celebrate Easter with worship, reflection, and community.',
+      'A special ceremony celebrating the spiritual growth and achievements of our youth in the Pathfinder program, reinforcing our commitment to youth development and SDA values.',
   },
 ];
 
