@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
 
 @theme {
   --font-sans:
@@ -8,13 +10,4 @@
 
 @theme inline {
   --color-primary: #0a3254;
-}
-
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
 }
