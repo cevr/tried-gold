@@ -27,7 +27,7 @@ export default function ContactPage() {
 
   return (
     <div className="container mx-auto max-w-4xl px-4 py-12">
-      <h1 className="text-primary mb-8 text-3xl font-semibold">Contact Us</h1>
+      <h1 className="text-primary mb-8 text-3xl font-medium">Contact Us</h1>
 
       <div className="grid gap-12 md:grid-cols-2">
         <div>
@@ -38,17 +38,21 @@ export default function ContactPage() {
             information below.
           </p>
 
-          <div className="mt-8 space-y-4">
-            <div className="flex items-start">
-              <Mail className="text-primary mt-1 mr-3 h-5 w-5" />
+          <div className="mt-8 flex flex-col gap-4">
+            <div className="flex items-start gap-3">
+              <div>
+                <Mail className="text-primary mt-1 size-6" />
+              </div>
               <div>
                 <h3 className="text-primary font-medium">Email</h3>
                 <p className="text-gray-700">info@triedgold.com</p>
               </div>
             </div>
 
-            <div className="flex items-start">
-              <MapPin className="text-primary mt-1 mr-3 h-5 w-5" />
+            <div className="flex items-start gap-3">
+              <div>
+                <MapPin className="text-primary size-6" />
+              </div>
               <div>
                 <h3 className="text-primary font-medium">Location</h3>
                 <p className="text-gray-700">

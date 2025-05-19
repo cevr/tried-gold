@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center px-4 text-center">
-      <blockquote className="text-primary max-w-2xl text-xl italic">
+      <blockquote className="text-primary max-w-2xl text-xl italic font-serif text-balance">
         "But he knoweth the way that I take: when he hath tried me, I shall come
         forth as gold."
       </blockquote>

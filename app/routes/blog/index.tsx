@@ -42,7 +42,7 @@ export default function BlogPage({ loaderData }: Route.ComponentProps) {
 
   return (
     <div className="container mx-auto max-w-4xl px-4 py-12">
-      <h1 className="text-primary mb-8 text-3xl font-semibold">Blog</h1>
+      <h1 className="text-primary mb-8 text-3xl font-medium">Blog</h1>
 
       <div className="space-y-10">
         {blogPosts.map((post) => (

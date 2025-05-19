@@ -103,14 +103,14 @@ export default function BlogPostPage({ loaderData }: Route.ComponentProps) {
         </Link>
       </div>
 
-      <article>
+      <article className="prose prose-blue">
         <header className="mb-8">
           <div className="mb-2 text-sm text-gray-500">{post.date}</div>
-          <h1 className="text-primary text-3xl font-semibold">{post.title}</h1>
+          <h1 className="text-primary">{post.title}</h1>
         </header>
 
         <div
-          className="prose prose-blue max-w-none"
+          className="max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>

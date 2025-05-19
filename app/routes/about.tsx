@@ -3,7 +3,7 @@ import { Bookmark } from 'lucide-react';
 export default function AboutPage() {
   return (
     <div className="container mx-auto max-w-3xl px-4 py-12">
-      <h1 className="text-primary mb-8 text-3xl font-semibold">About</h1>
+      <h1 className="text-primary mb-8 text-3xl font-medium">About</h1>
 
       <div className="space-y-6">
         <section>
