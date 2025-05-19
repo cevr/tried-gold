@@ -39,58 +39,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <body className="flex min-h-screen flex-col">
-          <header className="px-4 py-6">
-            <div className="container mx-auto flex items-center justify-between">
-              <Link
-                to="/"
-                className="text-primary text-2xl font-semibold"
-              >
-                Tried Gold
-              </Link>
-              <nav>
-                <ul className="flex gap-6">
-                  <li>
-                    <Link
-                      to="/events"
-                      className="text-primary hover:underline"
-                    >
-                      Events
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/blog"
-                      className="text-primary hover:underline"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/about"
-                      className="text-primary hover:underline"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/contact"
-                      className="text-primary hover:underline"
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </header>
+          <Header />
           <main className="flex-1">{children}</main>
-          <footer className="px-4 py-6 text-center text-sm text-gray-600">
-            <div className="container mx-auto">
-              © {new Date().getFullYear()} by Tried Gold Ministries.
-            </div>
-          </footer>
+          <Footer />
         </body>
         <ScrollRestoration />
         <Scripts />
@@ -129,5 +80,66 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         </pre>
       )}
     </main>
+  );
+}
+
+function Header() {
+  return (
+    <header className="px-4 py-6">
+      <div className="container mx-auto flex items-center justify-between">
+        <Link
+          to="/"
+          className="text-primary text-2xl font-semibold"
+        >
+          Tried Gold
+        </Link>
+        <nav>
+          <ul className="flex gap-6">
+            <li>
+              <Link
+                to="/events"
+                className="text-primary hover:underline"
+              >
+                Events
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                className="text-primary hover:underline"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="text-primary hover:underline"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="text-primary hover:underline"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="px-4 py-6 text-center text-sm text-gray-600">
+      <div className="container mx-auto">
+        © {new Date().getFullYear()} by Tried Gold Ministries.
+      </div>
+    </footer>
   );
 }
