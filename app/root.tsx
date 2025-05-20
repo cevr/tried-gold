@@ -22,8 +22,13 @@ export const links: Route.LinksFunction = () => [
     crossOrigin: 'anonymous',
   },
   {
+    rel: 'preload',
+    href: 'https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Open+Sans:wght@400;600&display=swap&subset=latin',
+    as: 'style',
+  },
+  {
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+    href: 'https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Open+Sans:wght@400;600&display=swap&subset=latin',
   },
 ];
 
@@ -86,7 +91,16 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 }
 
 function Header() {
+  const [_, startTransition] = React.useTransition();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const openMenu = React.useCallback(
+    () => startTransition(() => setIsMenuOpen(true)),
+    [],
+  );
+  const closeMenu = React.useCallback(
+    () => startTransition(() => setIsMenuOpen(false)),
+    [],
+  );
 
   return (
     <header className="px-4 py-6">
@@ -102,7 +116,7 @@ function Header() {
         {/* Hamburger button for mobile */}
         <button
           className="p-2 md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={isMenuOpen ? closeMenu : openMenu}
           aria-label="Toggle menu"
         >
           <div
@@ -123,7 +137,7 @@ function Header() {
               <Link
                 to="/events"
                 className="text-primary block py-2 hover:underline md:py-0"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Events
               </Link>
@@ -132,7 +146,7 @@ function Header() {
               <Link
                 to="/blog"
                 className="text-primary block py-2 hover:underline md:py-0"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Blog
               </Link>
@@ -141,7 +155,7 @@ function Header() {
               <Link
                 to="/about"
                 className="text-primary block py-2 hover:underline md:py-0"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 About
               </Link>
@@ -150,7 +164,7 @@ function Header() {
               <Link
                 to="/contact"
                 className="text-primary block py-2 hover:underline md:py-0"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Contact
               </Link>
